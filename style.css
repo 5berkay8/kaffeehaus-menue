@@ -1,0 +1,99 @@
+/* Schriftarten und Grundstile */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4e3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    color: #8b4513;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: 'Courier New', monospace;
+    font-size: 2.2em;
+    color: #d2691e;
+    padding-left: center;
+    margin-top: 20px;
+}
+
+h3 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.8em;
+    color: #6a5acd;
+    margin-top: 15px;
+}
+
+.menu-item {
+    font-size: 1.3em;
+    font-family: 'Tahoma', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-style: italic;
+    color: #8b0000;
+}
+
+/* Textdekorationen */
+.highlight {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #228b22;
+}
+
+.out-of-stock {
+    text-decoration: line-through;
+    color: #d3d3d3;
+}
+
+.special {
+    font-size: 1.5em;
+    color: #ff4500;
+    font-weight: bold;
+    text-decoration: italic;
+}
+
+/* Liste mit benutzerdefinierten Markern */
+ul.custom-list {
+    list-style-type: none;  /* Entfernt die Standard-Markierung (Punkte) */
+    padding-left: 0;  /* Entfernt den Standard-Einzug */
+}
+
+ul.custom-list li {
+    position: relative;
+    padding-left: 30px;  /* Platz für das Emoji */
+    margin-bottom: 10px;
+}
+
+/* Marker für Getränke (Kaffee) */
+ul.custom-list.coffee li::before {
+    content: '☕';  /* Kaffee-Emoji */
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    color: #8b4513;  /* Braun für Kaffee */
+}
+
+/* Marker für Snacks (Kuchen) */
+ul.custom-list.snacks li::before {
+    content: '🍰';  /* Kuchen-Emoji */
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    color: #ff6347;  /* Tomatenrot für Kuchen */
+}
+
+/* Zentrierung des Textes für den speziellen Dienstag-Text */
+.center-align {
+    text-align: center;
+    padding: 20px 0;  /* Fügt oben und unten etwas Abstand hinzu */
+}
